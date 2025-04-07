@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/doctor_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:text="Doctor Portal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/starttime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Start Time (1-7)"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/endtime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="End Time (1-7)"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filter Approved Patients"/>
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#EEE"
+        android:padding="10dp"
+        android:text="Filtered output will appear here"
+        android:scrollbars="vertical"
+        android:layout_marginTop="12dp"/>
+
+    <EditText
+        android:id="@+id/approveuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Username to Approve Appointment"/>
+
+    <Button
+        android:id="@+id/approve_appointment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Approve Appointment"/>
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>
